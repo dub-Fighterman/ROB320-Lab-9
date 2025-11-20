@@ -1,0 +1,17 @@
+/Users/Ruey/Desktop/roscourse-labs/stencil/Lab8/build/CMakeFiles/visitor.dir
+/Users/Ruey/Desktop/roscourse-labs/stencil/Lab8/build/CMakeFiles/variant_visitor.dir
+/Users/Ruey/Desktop/roscourse-labs/stencil/Lab8/build/CMakeFiles/strategy.dir
+/Users/Ruey/Desktop/roscourse-labs/stencil/Lab8/build/CMakeFiles/std_function_strategy.dir
+/Users/Ruey/Desktop/roscourse-labs/stencil/Lab8/build/CMakeFiles/command.dir
+/Users/Ruey/Desktop/roscourse-labs/stencil/Lab8/build/CMakeFiles/observer.dir
+/Users/Ruey/Desktop/roscourse-labs/stencil/Lab8/build/CMakeFiles/crtp.dir
+/Users/Ruey/Desktop/roscourse-labs/stencil/Lab8/build/CMakeFiles/concepts.dir
+/Users/Ruey/Desktop/roscourse-labs/stencil/Lab8/build/CMakeFiles/crtp_mixin.dir
+/Users/Ruey/Desktop/roscourse-labs/stencil/Lab8/build/CMakeFiles/external_polymorphism.dir
+/Users/Ruey/Desktop/roscourse-labs/stencil/Lab8/build/CMakeFiles/type_erasure.dir
+/Users/Ruey/Desktop/roscourse-labs/stencil/Lab8/build/CMakeFiles/decorator.dir
+/Users/Ruey/Desktop/roscourse-labs/stencil/Lab8/build/CMakeFiles/static_decorator.dir
+/Users/Ruey/Desktop/roscourse-labs/stencil/Lab8/build/CMakeFiles/dynamic_decorator.dir
+/Users/Ruey/Desktop/roscourse-labs/stencil/Lab8/build/CMakeFiles/singleton.dir
+/Users/Ruey/Desktop/roscourse-labs/stencil/Lab8/build/CMakeFiles/edit_cache.dir
+/Users/Ruey/Desktop/roscourse-labs/stencil/Lab8/build/CMakeFiles/rebuild_cache.dir

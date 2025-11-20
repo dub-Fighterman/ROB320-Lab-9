@@ -1,0 +1,1 @@
+/usr/bin/c++  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/external_polymorphism.dir/6_external_polymorphism/external_polymorphism_main.cpp.o -o external_polymorphism

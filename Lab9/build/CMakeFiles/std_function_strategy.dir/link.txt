@@ -1,0 +1,1 @@
+/usr/bin/c++  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/std_function_strategy.dir/2_strategy/std_function_strategy_main.cpp.o -o std_function_strategy
