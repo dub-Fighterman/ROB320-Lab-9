@@ -54,5 +54,16 @@ class Draw : public ShapeVisitor {
 //       "Pretend the circle got dilated." or
 //       "Pretend the square got dilated."
 //       depending on the accepting object type.
+class Dilate : public ShapeVisitor {
+   public:
+
+    void visit(Circle const& circle) const override {
+        std::cout << "Pretend the circle got dilated." << std::endl;
+    }
+
+    void visit(Square const& square) const override {
+        std::cout << "Pretend the square got dilated." << std::endl;
+    }
+};
 
 #endif  // LAB8_VISITOR_HPP

@@ -71,5 +71,13 @@ struct Rotate {
 //       "Pretend the circle got dilated." or
 //       "Pretend the square got dilated."
 //       depending on the accepting object type.
+struct Dilate {
+    void operator()(Circle const& circle) const {
+        std::cout << "Pretend the circle got dilated." << std::endl;
+    }
+    void operator()(Square const& square) const {
+        std::cout << "Pretend the square got dilated." << std::endl;
+    }
+};
 
 #endif  // LAB8_VARIANT_VISITOR_HPP

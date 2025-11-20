@@ -26,4 +26,7 @@ int main() {
     }
 
     // TODO: Use the dilate visitor on all the shapes.
+    for (const auto &shape : shapes) {
+        shape->accept(Dilate{});
+    }
 }

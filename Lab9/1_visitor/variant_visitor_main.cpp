@@ -24,4 +24,7 @@ int main() {
     }
 
     // TODO: Use the dilate function object on all the shapes.
+    for (const auto &shape : shapes) {
+        std::visit(Dilate{}, shape);
+    }
 }
