@@ -17,10 +17,16 @@ int main() {
             std::make_unique<ConferenceTicket>("CppCon", 999.0))));
 
     // TODO: Make a Discounted, Taxed, Free, CppBook.
+    std::unique_ptr<Item> item3(
+        std::make_unique<Discounted>(0.1,
+            std::make_unique<Taxed>(0.07,
+                std::make_unique<Free>(
+                    std::make_unique<CppBook>("C++ Templates", 49.0)))));
 
     // Check that actual prices.
     std::cout << "Price of Taxed CppBook: " << item1->price() << std::endl;
     std::cout << "Price of Taxed Discounted ConferenceTicket: " << item2->price() << std::endl;
 
     // TODO: Output the price of the new book followed by a newline.
+    std::cout << item3->price() << std::endl;
 }

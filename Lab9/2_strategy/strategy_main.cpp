@@ -14,6 +14,12 @@ int main() {
     vulkan_circle.draw();
 
     // TODO: Draw a square using the DirectX implementation.
+    auto directx_drawer = std::make_unique<DirectXCircleStrategy>();
+    Circle directx_circle(0.25, std::move(directx_drawer));
+    directx_circle.draw();
 
     // TODO: Draw a square using the DirectX implementation.
+    auto directx_drawer_2 = std::make_unique<DirectXSquareStrategy>();
+    Square directx_square(0.5, std::move(directx_drawer_2));
+    directx_square.draw();
 }

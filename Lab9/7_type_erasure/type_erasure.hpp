@@ -119,6 +119,7 @@ class OpenGLDrawStrategy {
 
 // TODO: Add a class called "Oval", no need for any members. Hint: Same as in
 //       External Polymorphism.
+class Oval { };
 
 // TODO: Add a "VulkanDrawStrategy" which outputs
 //       "Pretend a circle got drawn with Vulkan."
@@ -127,5 +128,21 @@ class OpenGLDrawStrategy {
 //       for Squares, and
 //       "Pretend an oval got drawn with Vulkan."
 //       for Ovals. Hint: Same as in External Polymorphism.
+class VulkanDrawStrategy {
+   public:
+    VulkanDrawStrategy() = default;
+
+    void operator()(Circle const& circle) const {
+        std::cout << "Pretend a circle got drawn with Vulkan." << std::endl;
+    }
+
+    void operator()(Square const& square) const {
+        std::cout << "Pretend a square got drawn with Vulkan." << std::endl;
+    }
+
+    void operator()(Oval const& oval) const {
+        std::cout << "Pretend an oval got drawn with Vulkan." << std::endl;
+    }
+};
 
 #endif  // LAB8_TYPE_ERASURE_HPP

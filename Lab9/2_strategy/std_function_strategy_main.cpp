@@ -10,6 +10,10 @@ int main() {
     vulkan_circle.draw();
 
     // TODO: Draw a square using the DirectX implementation.
+    Circle directx_circle(0.25, directXDrawCircleStrategy);
+    directx_circle.draw();
 
     // TODO: Draw a square using the DirectX implementation.
+    Square directx_square(0.5, directXDrawSquareStrategy);
+    directx_square.draw();
 }

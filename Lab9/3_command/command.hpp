@@ -61,5 +61,15 @@ class OpenGLCircleCommand : public DrawCommand<Circle> {
 //       during the execute operation. It should output
 //       "Pretend this implements removing a circle with Vulkan."
 //       during the undo operation.
+class VulkanCircleCommand : public DrawCommand<Circle> {
+   public:
+    void execute(Circle const& circle) const override {
+        std::cout << "Pretend this implements drawing a circle with Vulkan." << std::endl;
+    }
+
+    void undo(Circle const& circle) const override {
+        std::cout << "Pretend this implements removing a circle with Vulkan." << std::endl;
+    }
+};
 
 #endif //LAB8_COMMAND_HPP

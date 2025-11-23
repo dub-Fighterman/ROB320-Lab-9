@@ -100,5 +100,14 @@ class NameObserver : public Observer<Person, Person::StateChange> {
 //       simply check if the property is Person::addressChanged and if so output:
 //       "Pretend this updates the AddressObserver in a way that would be useful
 //       to a third party."
+class AddressObserver : public Observer<Person, Person::StateChange> {
+   public:
+    void update(Person const& person, Person::StateChange property) override {
+        if (property == Person::addressChanged) {
+            std::cout << "Pretend this updates the AddressObserver in a way that would be useful "
+                         "to a third party." << std::endl;
+        }
+    }
+};
 
 #endif  // LAB8_OBSERVER_HPP

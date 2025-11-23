@@ -105,5 +105,15 @@ class ConferenceTicket {
 
 // TODO: Add another decorator class called "Free" which makes the stored item
 //       free.
+class Free {
+   public:
+    explicit Free(Item item)
+        : item_(std::move(item)) {}
+
+    Money price() const { return 0.0; }
+
+   private:
+    Item item_;
+};
 
 #endif  // LAB8_VALUE_BASED_DYNAMIC_DECORATOR_HPP

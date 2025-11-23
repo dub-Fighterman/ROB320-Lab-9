@@ -16,8 +16,11 @@ int main() {
     Shape square_shape1(square, drawer);
 
     // TODO: Make a Shape representing a square drawn with Vulkan.
+    VulkanDrawStrategy vulkan_drawer;
+    Shape square_shape2(square, vulkan_drawer);
 
     // TODO: Make a Shape representing an oval drawn with Vulkan.
+    Shape oval_shape(Oval{}, vulkan_drawer);
 
     // Make a container of shapes to demonstrate polymorphic usage.
     std::vector<Shape> shapes;
@@ -27,6 +30,8 @@ int main() {
     shapes.emplace_back(square_shape1);
 
     // TODO: Add the square, then the oval to the shapes vector.
+    shapes.emplace_back(square_shape2);
+    shapes.emplace_back(oval_shape);
 
     // Notice how simple this is.
     for (const auto& shape : shapes) {

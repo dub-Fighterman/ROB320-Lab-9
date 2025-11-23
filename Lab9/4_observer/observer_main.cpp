@@ -12,8 +12,14 @@ int main() {
     chad.forename("Professor Chad");
 
     // TODO: Make an AddressObserver and attach it to Brody.
+    AddressObserver address_observer;
+    brody.attach(&address_observer);
 
     // TODO: Update Brody's address to be "2505 Hayward Ave.".
+    brody.address("2505 Hayward Ave.");
 
     // TODO: Detach both observers wherever they are attached.
+    chad.detach(&name_observer);
+    brody.detach(&name_observer);
+    brody.detach(&address_observer);
 }

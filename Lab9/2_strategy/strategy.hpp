@@ -75,9 +75,21 @@ class VulkanCircleStrategy : public DrawStrategy<Circle> {
 // TODO: Implement a draw strategy for circles called DirectXCircleStrategy.
 //       The implementation should simply output:
 //       "Pretend this implements drawing a circle with DirectX."
+class DirectXCircleStrategy : public DrawStrategy<Circle> {
+   public:
+    void draw(Circle const& circle) const override {
+        std::cout << "Pretend this implements drawing a circle with DirectX." << std::endl;
+    }
+};
 
 // TODO: Implement a draw strategy for squares called DirectXSquareStrategy.
 //       The implementation should simply output:
 //       "Pretend this implements drawing a square with DirectX."
+class DirectXSquareStrategy : public DrawStrategy<Square> {
+   public:
+    void draw(Square const& square) const override {
+        std::cout << "Pretend this implements drawing a square with DirectX." << std::endl;
+    }
+};
 
 #endif  // LAB8_STRATEGY_HPP

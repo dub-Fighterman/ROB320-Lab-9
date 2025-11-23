@@ -64,5 +64,16 @@ class Taxed : private Item {
 
 // TODO: Make a decorator called Free to make an item's price zero. Feel free to
 //       use either pattern.
+template <PricedItem Item>
+class Free : private Item {
+   public:
+    template <typename... Args>
+    explicit Free(Args&&... args)
+        : Item{std::forward<Args>(args)... } {}
+
+    Money price() const {
+        return 0.0;
+    }
+};
 
 #endif  // LAB8_VALUE_BASED_STATIC_DECORATOR_HPP

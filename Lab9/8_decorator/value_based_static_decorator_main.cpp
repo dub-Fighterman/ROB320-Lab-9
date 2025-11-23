@@ -7,9 +7,11 @@ int main() {
     Taxed<15, Discounted<20, ConferenceTicket>> item{"Core C++", 499.0};
 
     // TODO: Make a Free Discounted ConferenceTicket item.
+    Free<Discounted<20, ConferenceTicket>> free_item{"CppNow", 299.0};
 
     // The price should be 499*0.8*1.15 = 459.08.
     std::cout << item.price() << std::endl;
 
     // TODO: Output the price of the new item followed by a newline.
+    std::cout << free_item.price() << std::endl;
 }

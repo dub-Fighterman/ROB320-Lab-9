@@ -57,9 +57,15 @@ void vulkanDrawCircleStrategy(Circle const&) {
 // TODO: Implement a draw strategy for circles called directXDrawCircleStrategy.
 //       The implementation should simply output:
 //       "Pretend this implements drawing a circle with DirectX."
+void directXDrawCircleStrategy(Circle const&) {
+    std::cout << "Pretend this implements drawing a circle with DirectX." << std::endl;
+}
 
 // TODO: Implement a draw strategy for circles called directXDrawSquareStrategy.
 //       The implementation should simply output:
 //       "Pretend this implements drawing a circle with DirectX."
+void directXDrawSquareStrategy(Square const&) {
+    std::cout << "Pretend this implements drawing a square with DirectX." << std::endl;
+}
 
 #endif  // LAB8_STD_FUNCTION_STRATEGY_HPP

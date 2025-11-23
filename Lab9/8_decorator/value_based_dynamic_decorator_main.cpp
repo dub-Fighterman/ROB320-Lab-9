@@ -7,9 +7,11 @@ int main() {
     Item item(Taxed(0.15, Discounted(0.2, ConferenceTicket{"Core C++", 499.0})));
 
     // TODO: Make a Taxed, Free, ConferenceTicket item.
+    Item free_item(Taxed(0.15, Free(Item(ConferenceTicket{"CppNow", 299.0}))));
 
     // The price should be 499*0.8*1.15 = 459.08.
     std::cout << item.price() << std::endl;
 
     // TODO: Output your new item's price followed by a new line.
+    std::cout << free_item.price() << std::endl;
 }

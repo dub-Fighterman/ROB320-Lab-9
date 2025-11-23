@@ -101,5 +101,14 @@ class Taxed : public DecoratedItem {
 };
 
 // TODO: Write a decorator that makes the item free, called Free.
+class Free : public DecoratedItem {
+   public:
+    explicit Free(std::unique_ptr<Item> item)
+        : DecoratedItem(std::move(item)) {}
+
+    Money price() const override {
+        return 0.0;
+    }
+};
 
 #endif  // LAB8_DECORATOR_HPP
